@@ -90,7 +90,6 @@ const Modal:React.FC<ModalProps> = ({
                 xl:w-2/5
                 my-6
                 mx-auto
-                h-full
                 lg:h-auto
                 md:h-auto
             '
@@ -129,6 +128,7 @@ const Modal:React.FC<ModalProps> = ({
                             flex
                             items-center
                             p-6
+                            pt-20
                             rounded-t
                             justify-center
                             relative
@@ -184,6 +184,7 @@ const Modal:React.FC<ModalProps> = ({
                                 onClick={handleSubmit} 
                             />
                         </div>
+                        {footer}
                     </div>
                 </div>
             </div>
