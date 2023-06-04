@@ -14,6 +14,7 @@ import useLoginModal from "@/app/hooks/useLoginModal";
 import {signIn} from 'next-auth/react'
 import {useRouter} from "next/navigation"
 
+
 const LoginModal = () => {
     const RegisterModal=useRegisterModal();
     const LoginModal=useLoginModal();
@@ -88,13 +89,13 @@ const LoginModal = () => {
                 outline
                 label="Continue with Google"
                 icon={FcGoogle}
-                onClick={()=>{}}
+                onClick={()=>signIn('google')}
             />
             <Button
                 outline
                 label="Continue with Github"
                 icon={AiFillGithub}
-                onClick={()=>{}}
+                onClick={()=>signIn('github')}
             />
             <div
                 className="
