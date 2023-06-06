@@ -80,11 +80,6 @@ export const categories=[
     label:'Barns',
     icon:GiBarn,
     description:'This property is in the barn'
-  },
-  {
-    label:'Lux',
-    icon:IoIosGlobe,
-    description:'This property is luxurious'
   }
 ]
 
