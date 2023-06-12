@@ -1,5 +1,4 @@
 import ClientOnly from './components/ClientOnly'
-import Modal from './components/modals/Modal'
 import RegisterModal from './components/modals/RegisterModal'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
@@ -12,10 +11,10 @@ import SearchModal from './components/modals/SearchModal'
 
 const nunito = Nunito({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Airbnb',
-  description: 'Airbnb Clone',
-}
+export const metadata={
+  title:"Airbnb",
+  description:'Airbnb Clone, Book your destination'
+}  
 
 export default async function RootLayout({
   children,
@@ -25,6 +24,9 @@ export default async function RootLayout({
   const currentUser=await getCurrentUser();
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/airbnb/public/images/logoo.png" />
+      </head>
       <body className={nunito.className}>
         <ClientOnly>
           <ToastProvider/>
