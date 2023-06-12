@@ -1,9 +1,9 @@
 import React from 'react'
 import ClientOnly from '../components/ClientOnly'
 import EmptyState from '../components/EmptyState'
-import getFavoriteListings from '../actions/getFavoriteListings'
 import getCurrentUser from '../actions/getCurrentUser'
 import FavoriteClient from './FavoriteClient'
+import getFavoriteListings from '../actions/getFavoriteListings'
 
 const page =async () => {
     const listings=await getFavoriteListings();
