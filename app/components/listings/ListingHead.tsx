@@ -1,11 +1,11 @@
 'use client'
 
-import useCountries from '@/app/hooks/useCountries';
 import { SafeUser } from '@/app/types';
 import React from 'react'
 import Heading from '../Heading';
 import Image from 'next/image';
 import HeartButton from '../HeartButton';
+import useCountries from '@/app/hooks/useCountries';
 
 interface ListingHeadProps{
     title:string;

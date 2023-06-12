@@ -1,6 +1,5 @@
 'use client';
 
-import useCountries from "@/app/hooks/useCountries";
 import { SafeUser } from "@/app/types";
 import { Listing, Reservation } from "@prisma/client";
 import { useRouter } from "next/navigation";
@@ -9,6 +8,7 @@ import format from "date-fns/format";
 import Image from "next/image";
 import HeartButton from "../HeartButton";
 import Button from "../Button";
+import useCountries from "@/app/hooks/useCountries";
 
 interface ListingCardProps{
     data:Listing;
